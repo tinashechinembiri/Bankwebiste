@@ -1,0 +1,24 @@
+<web-app id="WebApp_someID">
+
+    <servlet-mapping>
+    <servlet-name>javax.ws.rs.core.Application</servlet-name>
+    <url-pattern>/rest</url-pattern>
+</servlet-mapping>
+    <security-constraint id="SecurityConstraint_1">
+      <web-resource-collection id="WebResourceCollection_1">
+        <web-resource-name>AddressBookAppSample</web-resource-name>
+        <description>Protection area for Rest Servlet</description>
+        <url-pattern>/*</url-pattern>
+        <http-method>GET</http-method>
+        <http-method>POST</http-method>
+        <http-method>PUT</http-method> 
+      </web-resource-collection>
+
+    </security-constraint>
+
+  
+    <login-config>
+        <auth-method>BASIC</auth-method>
+        <realm-name>test realm</realm-name>
+    </login-config>
+</web-app>

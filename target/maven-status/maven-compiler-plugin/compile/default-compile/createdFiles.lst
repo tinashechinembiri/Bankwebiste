@@ -1,0 +1,9 @@
+com\cognizant\persistence\PersonalData.class
+com\cognizant\Util\ReuasableUtil.class
+com\cognizant\Transaction\LoginTransactionInterface.class
+com\cognizant\Util\MainClass\JaxActivator.class
+com\cognizant\Util\JSONUtil.class
+com\cognizant\Transaction\LoginTranscation.class
+com\cognizant\Util\MainClass\ApiUrl.class
+com\cognizant\Util\Business\Business.class
+com\cognizant\Util\Business\BusinessReposity.class
