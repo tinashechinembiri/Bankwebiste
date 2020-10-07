@@ -1,0 +1,43 @@
+.mainImage
+{
+    height: 500px;
+    left: 100px ;
+
+    width: 1000px;
+}
+.mainBackground
+{
+    display: flex; 
+    left: 200px;
+    flex-direction: row;
+    row-gap: 2px;
+    justify-content:space-around;
+  
+}
+.sideitems
+{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+.inside_text
+{
+    position: absolute;
+    top: 450px;
+    left: 850px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}

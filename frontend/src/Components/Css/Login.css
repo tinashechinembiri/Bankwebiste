@@ -1,0 +1,65 @@
+.card {
+    margin: 0 auto; 
+    float: none; 
+    margin-bottom: 10px; 
+    padding: 70px;
+    background-color:blanchedalmond; 
+    
+}
+.CardTitle
+{
+    display: flex;
+    justify-content: center; 
+     
+}
+
+.FormItems
+{
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.formgroup
+{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.passwords
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.maincontainer
+{
+    display: flex;
+    flex-direction: row;
+    justify-self: auto;
+    justify-content: space-around; 
+    
+       
+}
+
+ul {
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
+}
+.Button_item
+{
+    padding: 10px; 
+    position: relative; 
+left: 50%;
+transform: translateX(-50%);
+    
+}
+.cardy_body{
+
+    padding: 30px;
+}

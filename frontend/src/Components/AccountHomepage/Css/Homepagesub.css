@@ -1,0 +1,27 @@
+.SubAccountcss{
+display: flexbox;
+flex-direction: column;
+border: 3px solid green ;
+padding: 4rem;
+
+}
+.Userdetails{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+   
+
+    
+
+}
+th{
+    padding: 12px;
+    border: double 3px rgb(17, 17, 17);
+
+}
+td{
+    padding: 12px;
+    border-left: double 3px rgb(203, 203, 218);
+    border-right: double 3px rgb(203, 203, 218);
+    border-bottom: dashed  3px  rgb(203, 203, 218);
+}
