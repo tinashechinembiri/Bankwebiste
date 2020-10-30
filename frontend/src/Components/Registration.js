@@ -152,11 +152,11 @@ class Registration extends Component
 
 
         return(
-            <div>
+            <div className="cards" >
 
             <h1>Registration</h1>
-            <Jumbotron>
-            <p>Step {this.state.currentStep} </p> 
+            <Jumbotron className="cardsitem" >
+            
             <form onSubmit={(event) => this.Submit_Registration(event)}>
             
               <Registration_account

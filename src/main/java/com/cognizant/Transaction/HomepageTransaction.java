@@ -80,7 +80,10 @@ public class HomepageTransaction implements HomepageTransactionInterface {
 		this.reuse = new ReuasableUtil (this.manager); 
 		String sql_string = "SELECT a FROM PersonalData a";
 		List<PersonalData> allaccounts =  this.reuse.mapper(sql_string).getResultList(); 
-		return util.getJSONForObject(allaccounts); 
+		allaccounts.forEach(action ->{
+			System.out.println(action.toString());
+		});
+		return   util.getJSONForObject(allaccounts); 
 	}
 	@Transactional(REQUIRED)
 	public String updatepassword(long username, String newPassword  )

@@ -1,5 +1,5 @@
 import React ,{ Component } from 'react';
-import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom'
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import './App.css';
 import Background  from "./Components/Background";
@@ -8,7 +8,8 @@ import Login from "./Components/Login";
 import Homepage from "./Components/Homepage"; 
 import Forgotpassword from "./Components/Forgotpassword";
 import Accountadmin from "./Components/AccountHomepage/Accountadmin"; 
-import {Collapse, Navbar, NavbarBrand, Nav, NavItem, NavLink} from 'reactstrap';
+import Loginnavabar from "./Components/MainNavbar/Loginnavabar"; 
+
 
 
 class App extends Component {
@@ -18,29 +19,17 @@ class App extends Component {
 
 
   render() {
+   console.log(localStorage.getItem('User')); 
+   
+
     return (
       <div  style={{height:'100%'}} className="mainContainer" >
-         <Navbar color='light'>
-         <NavbarBrand href="/">Home</NavbarBrand>
-         <Nav className="mr-auto" navbar>
-         <NavItem>
-              <NavLink href="/">About us</NavLink>
-            </NavItem>
-         </Nav>
-         <Nav>
-         <NavItem>
-              <NavLink href="/login">Login</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/registration">Register</NavLink>
-            </NavItem>
 
-         </Nav>
-         </Navbar>
+        <Loginnavabar/>
         
-
-         
-        <h1 className="h1"> Bank Saver application  </h1>
+        <h1 className="h1"> Bank Saver Application  
+        <img className="mainimage" src="/digitalimage.jpg" alt ="main logo"></img>
+        </h1>
        
         <div style={{marginTop:'64px'}}>
 

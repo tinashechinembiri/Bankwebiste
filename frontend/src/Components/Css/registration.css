@@ -1,10 +1,36 @@
-.Jumbotron
-{
-    
-}
+
 .registrationStep
 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
+    
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center; 
+    background-color :#007a78    ; 
+
+}
+
+.framecard
+{
+    justify-content: center;
+
+}
+label{
+    color: white;
+}
+h1{
+    color: white;
+}
+.cardsitem{
+    width: 60%;
+    background-color :#007a78 ; 
+
 }

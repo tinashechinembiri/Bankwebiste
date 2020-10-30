@@ -18,7 +18,7 @@ class Background extends Component{
     render()
     {
         return(
-            <div >
+            <div className="Template" >
                 <div className="mainBackground">
                 <Media>
                 
@@ -29,7 +29,7 @@ class Background extends Component{
                       alt="Generic placeholder"
                      />
                 <div className= "inside_text">
-                    fkkdkdkf
+                    
                 </div>
                 
                 </Media>

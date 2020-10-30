@@ -97,7 +97,7 @@ public class moneytransaction implements moneytransactioninterface{
 		return null; 
 	}
 	
-	public PersonalData addMoney (String userjson)
+	public PersonalData Loan (String userjson)
 	{
 		
 		

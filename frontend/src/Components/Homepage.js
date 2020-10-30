@@ -88,13 +88,13 @@ class Homepage extends Component
         }
         else     
         sidebar = <Navbar onSelectLanguage={this.handleFieldchange} /> 
-        console.log(this.state.SelectName)
+        
             
 
 
 
         return(
-            <div>
+            <div id="Main_Homepagecomponent">
                {sidebar}
                 <div className="MainAccountComponement">
               

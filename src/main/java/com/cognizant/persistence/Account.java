@@ -39,7 +39,7 @@ public class Account implements Serializable {
 	private Date expirydate;
 	
 	
-	@OneToMany( targetEntity = Statement.class , fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST,CascadeType.REMOVE},orphanRemoval = true)
+	@OneToMany( targetEntity = Statement.class , fetch = FetchType.EAGER, cascade = {CascadeType.PERSIST,CascadeType.REMOVE},orphanRemoval = true)
 	@JoinColumn(name="cardnumber",referencedColumnName = "account_cardnumber")
 	
 	private List<Statement> Statement ;

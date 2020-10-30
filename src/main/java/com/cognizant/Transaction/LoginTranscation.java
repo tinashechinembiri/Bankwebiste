@@ -40,12 +40,15 @@ public class LoginTranscation implements LoginTransactionInterface{
 	{
 		// redirect user after log in  backend or only front end 
 		///https://stackoverflow.com/questions/42061943/how-should-i-send-my-username-and-password-to-backend-in-java
+	
 		String string_querys  = "SELECT c FROM PersonalData c WHERE c.username = :id AND c.password = :pass"; 
 		boolean autheticate=false;
 		TypedQuery<PersonalData>  query = manager.createQuery(string_querys, PersonalData.class);
 		query.setParameter("id", username);
 	    query.setParameter("pass", password);
+	  
 	    PersonalData user = query.getSingleResult(); 
+	    
 	    try {
 	    if (user == null)
 	    {

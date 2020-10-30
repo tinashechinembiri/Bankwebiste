@@ -14,7 +14,7 @@ class AccountSummary extends Component{
     {
         let customerdata = this.props.account; 
         const items = this.props.account.account.map((d)=>
-        <tbody>
+        <tbody id="tablebody">
         <tr>
         <td key={1}>{d.type}</td>
          <td>{d.balance}</td>
@@ -39,7 +39,7 @@ class AccountSummary extends Component{
                         </thead>
                         <tbody>
                             <tr>
-                            <td>{customerdata.account_number}</td>
+                            <td>{customerdata.user_id}</td>
                             <td>{customerdata.firstName}</td>
                             <td>{customerdata.secondName}</td>
                             </tr>

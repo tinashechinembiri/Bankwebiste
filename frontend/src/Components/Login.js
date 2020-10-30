@@ -127,11 +127,12 @@ class Login extends Component
         
         return(
             <div className="maincontainer">
-               <Card style={{ width: '40rem' }}>
+               <Card id="carditem" style={{ width: '40rem' }} >
 
 
                    <CardBody>
-                       <CardTitle className="h3">Login Page   </CardTitle>
+                       
+                       <CardTitle className="headers">Login Page</CardTitle>
            
                 <Form className= "FormItems" onSubmit={(event) => this.submitForm(event)} >
                     <FormGroup className="formgroup"  > 
@@ -173,9 +174,9 @@ class Login extends Component
                     
                     </CardBody>
                     </Card> 
-                    <Card className="registration">
+                    <Card id="registration">
                     <CardBody className="cardy_body">
-                        <CardTitle  className="h3">Register for online Banking</CardTitle>
+                        <CardTitle  className="headers">Register for online Banking</CardTitle>
 
                         <CardText>
                                 <p>Manage your money online with our secure Online Banking service.</p>

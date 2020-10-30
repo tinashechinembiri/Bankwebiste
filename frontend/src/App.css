@@ -41,10 +41,25 @@ html{
  
   display: flex;
   justify-content: center; 
-  color: aqua;
+  color: #003b49;
 }
 .mainContainer 
 {
-  background-color: azure;
+  background-color :#ffc845;
   
+}
+#navbar_css {
+  background-color: #003b49; 
+  color: #FFFFFF;
+}
+.navitemcss
+{
+  color: #FFFFFF;
+  padding: 0.5%;
+  font-family: "Times New Roman", Times, serif;
+
+}
+.mainimage{
+  height: 50px;
+  width: 50px;
 }

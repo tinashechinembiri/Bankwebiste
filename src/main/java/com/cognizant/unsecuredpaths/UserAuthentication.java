@@ -51,6 +51,8 @@ public class UserAuthentication {
 	{
 		String username = credentials.getUsername();
 	    String password = credentials.getPassword();    
+	    
+	    System.out.println("user identity : " + username+":: "+ password);
 	    try {
 			SignIn(username, password);
 			String token = issueToken(username, "LoginToken"); 
@@ -69,10 +71,11 @@ public class UserAuthentication {
 	private void SignIn(String username, String password )throws Exception
 	{
 		byte[] pass_Sauth = Base64.getDecoder().decode(password);
+		System.out.println(new String (pass_Sauth));
 		
 		if (business.loggingin(username, new String (pass_Sauth))!= true )
 		{
-				
+				System.out.println("its working ");
 		}
 		else
 		{

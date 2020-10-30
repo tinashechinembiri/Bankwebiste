@@ -33,7 +33,7 @@ public class PersonalData implements Serializable {
 	private String password;
 	
 	 	
-@OneToMany(targetEntity=Account.class,cascade = {CascadeType.MERGE,CascadeType.REMOVE,CascadeType.REFRESH}, fetch = FetchType.LAZY) 
+@OneToMany(targetEntity=Account.class,cascade = {CascadeType.MERGE,CascadeType.REMOVE,CascadeType.REFRESH}, fetch = FetchType.EAGER) 
 @JoinColumn(name="account_number", referencedColumnName = "user_id")
 private List<Account> account ; 
 

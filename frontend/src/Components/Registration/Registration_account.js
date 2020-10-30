@@ -30,7 +30,7 @@ class Registration_account extends Component {
             return null; 
         }
         return(
-            <div >
+            <div className= "framecard">
 
                 <div className="registrationStep">
                 <label> Account Number</label>

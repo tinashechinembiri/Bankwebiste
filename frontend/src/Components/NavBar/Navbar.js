@@ -25,16 +25,17 @@ render()
     return (
     <div >
 
-     <Navbar className = "navbar_css" bg="dark" variant="dark">
-        <Nav className="mr-auto">
-        <input name = {'accountadmim'}  value = {"Account admin"} onClick={this.handlechange}  className="links" />
-          <br></br>
-        <input className="links" onClick={this.handlechange}  name={'accountsummary'} value ={'Account Summary'}/>
-         
+     <Navbar className = "navbar_css"  variant="dark">
+      <Nav id="navitems" className="mr-auto">
+      
+      <input  type="button" name = {'accountadmim'}  value = {"Account admin"} onClick={this.handlechange}  className="links" />
+      
+       <br></br>
+        <input  type="button" className="links" onClick={this.handlechange}  name={'accountsummary'} value ={'Account Summary'}/>
          <br></br>
-        <input  className="links"  onClick={this.handlechange}   name={'staments'}  value= {'Statements'}/>
+        <input   type="button" className="links"  onClick={this.handlechange}   name={'staments'}  value= {'Statements'}/>
          <br></br>
-        <input  className="links"  onClick={this.handlechange}   name={'paymentandtransfer'} value={'payment&Transfer'}/>
+        <input   type="button" className="links"  onClick={this.handlechange}   name={'paymentandtransfer'} value={'payment&Transfer'}/>
          <br></br>
        </Nav>
       </Navbar>
