@@ -9,6 +9,7 @@ import Homepage from "./Components/Homepage";
 import Forgotpassword from "./Components/Forgotpassword";
 import Accountadmin from "./Components/AccountHomepage/Accountadmin"; 
 import Loginnavabar from "./Components/MainNavbar/Loginnavabar"; 
+import authenticationService from './Components/Service/authenticationService'; 
 
 
 
@@ -18,12 +19,13 @@ class App extends Component {
 };
 
 
+
   render() {
-   console.log(localStorage.getItem('User')); 
-   
+   authenticationService.token_expire(); 
 
     return (
       <div  style={{height:'100%'}} className="mainContainer" >
+
 
         <Loginnavabar/>
         
@@ -43,12 +45,10 @@ class App extends Component {
                      <Route path='/Forgotpassword' exact={true} component={Forgotpassword}/>
 
                 </Switch>
-
            </Router>
        </div>
       </div>
     );
   }
 }
-
 export default App;

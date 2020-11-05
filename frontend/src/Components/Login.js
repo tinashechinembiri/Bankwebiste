@@ -9,6 +9,7 @@ import {
 //import { Link } from 'react-router-dom'; 
 
 import base64 from 'base-64';
+
 class Login extends Component
 {
     constructor(props)
@@ -45,8 +46,6 @@ class Login extends Component
             validate.usernameState = 'has-danger'
         }
         this.setState({ validate })
-
-
     }
     validatePassword = (event)=>
     {
@@ -90,8 +89,6 @@ class Login extends Component
             console.log(data)
              if(data.status === 200)
              {
-
-               
                  localStorage.setItem('User', data.headers.get('AUTHORIZATION'));
               this.props.history.push(
                     {
@@ -104,13 +101,8 @@ class Login extends Component
                         console.log("Failed Log in ")
                 }   
             }); 
-
-
     }
-    logout = () => 
-    {
-        localStorage.removeItem('User')
-    }
+   
     
     submitForm = (e) =>{
         e.preventDefault();
@@ -122,18 +114,16 @@ class Login extends Component
             }
         
 }
+
+
     render()
     {
         
         return(
             <div className="maincontainer">
                <Card id="carditem" style={{ width: '40rem' }} >
-
-
-                   <CardBody>
-                       
+                   <CardBody>                     
                        <CardTitle className="headers">Login Page</CardTitle>
-           
                 <Form className= "FormItems" onSubmit={(event) => this.submitForm(event)} >
                     <FormGroup className="formgroup"  > 
                         <label className="h6">username : </label>    
@@ -192,14 +182,10 @@ class Login extends Component
                                  <li>Item 7</li>
                                  <li>Item 8</li>
                                 </ul>
-                                
-
                               </div>
-                                
-
                         </CardText>
-                        <a href="/registration">
 
+                        <a href="/registration">
                         <Button className="Button_item">Register Now </Button>
                         </a>
                     </CardBody> 

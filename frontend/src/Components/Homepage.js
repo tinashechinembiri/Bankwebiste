@@ -65,14 +65,14 @@ class Homepage extends Component
         if (decoded.exp < time_now)
         {
              localStorage.removeItem('user'); 
-             
-
+             localStorage.clear(); 
         }
     }
 
     componentDidMount()
     {
         this.CallApi(); 
+       
     }
   
     render()
@@ -80,9 +80,9 @@ class Homepage extends Component
        
         let value = this.state.data; 
         let sidebar ; 
-        console.log(value)
+        console.log(value )
         
-        if (value.Login || value === [ ])
+        if (localStorage.getItem('User') ===  null)
         {
             return <Redirect to='/login' ></Redirect> ; 
         }
@@ -97,7 +97,7 @@ class Homepage extends Component
             <div id="Main_Homepagecomponent">
                {sidebar}
                 <div className="MainAccountComponement">
-              
+
                    {(this.state.SelectName ==='accountadmim') ?< Accountadmin account = {this.state.data}/>: null }
                    {(this.state.SelectName ==='accountsummary') ?< AccountSummary account = {this.state.data}/>: null }
                    {(this.state.SelectName ==='staments') ?<Statements account = {this.state.data}/>: null }
