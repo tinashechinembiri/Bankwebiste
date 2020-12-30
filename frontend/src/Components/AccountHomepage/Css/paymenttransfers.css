@@ -1,0 +1,84 @@
+#payment_card
+{
+    
+    width: 90%;
+    height: 50%;
+    border: white;
+    display: flex;
+    flex-direction: column;
+    font-family: Share Tech Mono;
+    background-color: #9BA7B2;
+    display: block;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
+    border: 1px solid grey;
+      margin: auto;
+      background: linear-gradient(-125deg, #1D3349, #06121E 55%);
+
+}
+#paymentpagebody
+{
+     top: 30%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+   
+}
+#payment_cardbody
+{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+#userinputcomponent
+{
+    
+    position: relative;
+    background-color:#007a78;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  
+    top : 75%; 
+ 
+}
+#payment_title
+{
+left: 10px;
+top: 0px;
+position: absolute;
+
+}
+#accountnumber
+{
+    position: absolute;
+    top: 0px;
+    left: 70%;
+}
+#sortcode
+{
+    position: absolute;
+    top: 0px;
+    left: 87%;
+}
+#paymentbody
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#label_balance 
+{
+    position: absolute;
+    left: 10px;
+    top: 80%;
+}
+#balance{
+    position: absolute;
+    top: 80%;
+    left: 90%;
+}

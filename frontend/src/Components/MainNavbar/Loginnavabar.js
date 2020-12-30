@@ -15,8 +15,9 @@ class Loginnavabar extends Component{
     render()
     { 
         
-      if (localStorage.getItem('User')== null)
+      if (localStorage.getItem('User')=== null)
       {
+        
     return(
     <div >
          <Navbar id ="navbar_css">
@@ -52,10 +53,10 @@ class Loginnavabar extends Component{
              </Nav>
              <Nav>
              <NavItem>
-                  <NavLink onClick={this.logoutbutton} className="navitemcss"  href="/login">Logout</NavLink>
+              <NavLink  className="navitemcss"  href="/Edit">Edit</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink  className="navitemcss"  href="/Edit">Edit</NavLink>
+                <NavLink onClick={this.logoutbutton} className="navitemcss"  href="/login">Logout</NavLink>
                 </NavItem>
     
              </Nav>

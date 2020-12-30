@@ -52,7 +52,7 @@ class Homepage extends Component
 
             }).then(res => res.json())
             .then(data => 
-                this.setState({data},console.table(data))
+                this.setState({data},console.log(data))
 
                 ); 
         }
@@ -80,7 +80,7 @@ class Homepage extends Component
        
         let value = this.state.data; 
         let sidebar ; 
-        console.log(value )
+       
         
         if (localStorage.getItem('User') ===  null)
         {
@@ -100,7 +100,7 @@ class Homepage extends Component
 
                    {(this.state.SelectName ==='accountadmim') ?< Accountadmin account = {this.state.data}/>: null }
                    {(this.state.SelectName ==='accountsummary') ?< AccountSummary account = {this.state.data}/>: null }
-                   {(this.state.SelectName ==='staments') ?<Statements account = {this.state.data}/>: null }
+                   {(this.state.SelectName ==='staments') ?<Statements statement = {this.state.data}/>: null }
                    {(this.state.SelectName ==='paymentandtransfer') ?<Paymenttransfer account = {this.state.data}/>: null }
                 </div>
             </div>

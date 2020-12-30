@@ -32,6 +32,7 @@ public class Statement  implements Serializable {
 	private String uodatedate; 
 	
 	private String statementtype;
+	private Long senderaccount;
 	
 	
 	public Statement()
@@ -48,6 +49,18 @@ public class Statement  implements Serializable {
 		this.uodatedate = uodatedate;
 		this.statementtype = statementtype;
 	}
+	
+	public Statement(String referencenumber, Long cardnumber, double balance, String uodatedate, String statementtype, Long senderaccount) {
+		super();
+		this.referencenumber = referencenumber;
+		
+		this.cardnumber = cardnumber;
+		this.balance = balance;
+		this.uodatedate = uodatedate;
+		this.statementtype = statementtype;
+		this.senderaccount = senderaccount; 
+	}
+
 	
 	//@ManyToOne
 	//@JoinColumn(name="cardnumber",insertable = false, updatable = false)

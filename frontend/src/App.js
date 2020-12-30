@@ -1,5 +1,4 @@
 import React ,{ Component } from 'react';
-import { useLocation } from 'react-router-dom'
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import './App.css';
 import Background  from "./Components/Background";

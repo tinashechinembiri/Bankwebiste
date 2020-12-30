@@ -13,11 +13,11 @@ import com.cognizant.Util.Business.moneytransactionreposity;
 import com.cognizant.persistence.PersonalData;
 
 //@Path ("/secured")
-@Path ("/test")
+@Path ("/secured")
 public class Moneytransaction {
 @Inject
 private moneytransactionreposity transaction ; 
-@Path("/test1/")
+@Path("/moneytransfer/")
 @PUT
 @Produces({"application/json"})
 public String moneytransfer(String moneytransfer)
@@ -30,13 +30,11 @@ public String moneytransfer(String moneytransfer)
 	double transferamount =  jsonObject.getDouble("transferamount"); 
 	
 	System.out.println(transferaccountid);
-	transaction.moneytranfer(transferamount, transferaccountid, userid); 
-	//System.out.println(userid);
+	String results = transaction.moneytranfer(transferamount, transferaccountid, userid); 
 	
-	
-	return null; 
+	return results; 
 }
-@Path("/test2/")
+@Path("/statementupdate/")
 @POST
 @Produces({"application/json"})
 public String createstatement (String moneytransfer)
@@ -46,8 +44,9 @@ public String createstatement (String moneytransfer)
 	long  transferaccountid = jsonObject.getLong("transferaccountid"); 
 	double transferamount =  jsonObject.getDouble("transferamount"); 
 	
-	transaction.Statement(transferamount, transferaccountid, userid); 
-	return null; 
+	String result = transaction.Statement(transferamount, transferaccountid, userid); 
+	return result; 
 }
+
 
 }

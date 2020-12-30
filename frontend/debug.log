@@ -3,3 +3,5 @@
 [1105/142240.592:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\tinas\AppData\Local\AVAST Software\Browser\User Data\Crashpad\attachments\66c2bcf4-5b86-46be-9f59-d3a130c89e51: The system cannot find the path specified. (0x3)
 [1105/142240.603:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\tinas\AppData\Local\AVAST Software\Browser\User Data\Crashpad\attachments\2afdbc64-7841-47c0-95da-33d53439bd8a: The system cannot find the path specified. (0x3)
 [1105/142240.614:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\tinas\AppData\Local\AVAST Software\Browser\User Data\Crashpad\attachments\09bf9b55-ac12-4c87-9d02-5573bab32dda: The system cannot find the path specified. (0x3)
+[1210/141509.916:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1218/151419.489:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)

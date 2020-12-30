@@ -13,6 +13,7 @@ class AccountSummary extends Component{
     render()
     {
         let customerdata = this.props.account; 
+        
         const items = this.props.account.account.map((d)=>
         <tbody id="tablebody">
         <tr>
